@@ -1,23 +1,23 @@
 CARS
 
-id -- INT (es. 1, 2, 3)
-brand -- VARCHAR(20) (es. Citroen)
-model -- VARCHAR(20) (es. Berlingo)
-model_specifications -- VARCHAR(50) (es. 1.6 16v 5p. Multispace GPL)
-description -- TEXT (es. Autoradio, Airbag passeggero, Servosterzo, Impianto a gas da revisionare bombola scaduta, Ammaccature su carrozzeria, Rumorosità avantreno)
-image -- TEXT (es. URL)
-power_kw -- SMALLINT (es. 80)
-transmission -- VARCHAR(20) (es. MANUALE, MANUALE/AUTOMATICA)
-gears -- TINYINT (es. 6)
-empty_weight_kg -- SMALLINT (es 1300)
-price -- FLOAT(7,2) (es. 10000.99)
-year -- YEAR (es. 2004)
-mileage_km -- MEDIUMINT (es. 300000)
-power_supply -- VARCHAR(20) (es. BENZINA)
-traction -- VARCHAR(15) (es. ANTERIORE)
-owners -- TINYINT (es. 3)
-emissions_class -- VARCHAR(10) (es. Euro 3)
-color -- VARCHAR(20) (es. Giallo)
-interior_color -- VARCHAR(20) (es. Verde)
-loan_possibility -- TINYINT (0 oppure 1 | true oppure false)
-rating -- FLOAT(2,1) (es. 7.2)
+id -- INT (es. 1, 2, 3) -- PRIMARY KEY -- NOTNULL -- AUTO_INCREMENT -- UNIQUE -- UNSIGNED
+brand -- VARCHAR(20) (es. Citroen) -- NOTNULL
+model -- VARCHAR(20) (es. Berlingo) -- NOTNULL
+model_specifications -- VARCHAR(50) (es. 1.6 16v 5p. Multispace GPL) -- NOTNULL
+description -- TEXT (es. Autoradio, Airbag passeggero, Servosterzo, Impianto a gas da revisionare bombola scaduta, Ammaccature su carrozzeria, Rumorosità avantreno) -- NULL
+image -- TEXT (es. URL) -- NULL -- DEFAULT(/img/placeholder_img.png)
+power_kw -- SMALLINT (es. 80) -- NOTNULL
+transmission -- VARCHAR(20) (es. MANUALE, MANUALE/AUTOMATICA) -- NOTNULL
+gears -- TINYINT (es. 6) - NOTNULL
+empty_weight_kg -- SMALLINT (es 1300) -- NULL
+price -- FLOAT(7,2) (es. 10000.99) -- NOTNULL -- UNSIGNED
+year -- YEAR (es. 2004) -- NOTNULL
+mileage_km -- MEDIUMINT (es. 300000) -- NOTNULL -- UNSIGNED
+power_supply -- VARCHAR(20) (es. BENZINA) -- NOTNULL
+traction -- VARCHAR(15) (es. ANTERIORE) -- NOTNULL
+owners -- TINYINT (es. 3) -- NOTNULL -- UNSIGNED -- DEFAULT(1)
+emissions_class -- VARCHAR(10) (es. Euro 3) -- NULL
+color -- VARCHAR(20) (es. Giallo) -- NOTNULL
+interior_color -- VARCHAR(20) (es. Verde) -- NULL
+loan_possibility -- TINYINT (1 oppure 0 | true oppure false) -- NOTNULL -- DEFAULT(0 -> false)
+rating -- FLOAT(2,1) (es. 7.2) -- NULL
