@@ -9,7 +9,7 @@ image -- TEXT (es. URL) -- NULL -- DEFAULT(/img/placeholder_img.png)
 power_kw -- SMALLINT (es. 80) -- NOTNULL
 transmission -- VARCHAR(20) (es. MANUALE, MANUALE/AUTOMATICA) -- NOTNULL
 gears -- TINYINT (es. 6) - NOTNULL
-empty_weight_kg -- SMALLINT (es 1300) -- NULL
+empty_weight_kg -- SMALLINT (es 1300) -- NULL -- UNSIGNED
 price -- FLOAT(7,2) (es. 10000.99) -- NOTNULL -- UNSIGNED
 year -- YEAR (es. 2004) -- NOTNULL
 mileage_km -- MEDIUMINT (es. 300000) -- NOTNULL -- UNSIGNED
